@@ -1,6 +1,6 @@
 <% stats = capture do %>
 	<div class="card card-body px-2">
-		Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+		<%# Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. %>
 	</div>
 <% end %>
 <p style="color: green"><%= notice %></p>
@@ -31,11 +31,13 @@
 						</a>
 					</div>
 				</div>
-				<%# collapse %>
-				<div class="collapse my-2 px-2" id="collapseStats_<%= dom_id(post) %>">
+				<div class="collapse my-2 px-3" id="collapseStats_<%= dom_id(post) %>">
+					<%= turbo_frame_tag post_stats_path(post.id).parameterize, src: post_stats_path(post), loading: 'lazy'  %>
+					<%# stats %>
 				</div>
 			</div>
 		<% end %>
 	</div>
 	<%= link_to "New post", new_post_path %>
 </div>
+<%console%>
