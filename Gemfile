@@ -18,7 +18,9 @@ gem "bootsnap", require: false
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
-  gem 'faker', '~> 1.6', '>= 1.6.6'
+  # gem 'faker', '~> 1.6', '>= 1.6.6', require: false
+  gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master', require: false
+  gem 'ruby-progressbar', '~> 1.8', '>= 1.8.1'
 end
 
 group :development do
