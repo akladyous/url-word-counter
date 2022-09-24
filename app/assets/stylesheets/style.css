@@ -5,6 +5,13 @@
     color: black;
     background-color: white;
 }
+.title:nth-child(even) .words {
+    background-color: white;
+}
+.title:nth-child(odd) .words {
+    background-color: var(--bs-gray-100);
+}
+
 .link-to {
     text-decoration: none;
     color: inherit;

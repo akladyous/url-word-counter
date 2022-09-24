@@ -11,7 +11,7 @@ class StatsController < ApplicationController
 
   def set_stats
     @post = Post.friendly.find(stats_params[:post_id])
-    @stats = 10 #Stats.tokenize(stats_params[:post_id], exclude: ["some", "words"])
+    @stats = Stats.tokenize(stats_params[:post_id], exclude: ["some", "words"])
   end
 
 end
