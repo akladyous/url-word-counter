@@ -29,3 +29,5 @@ posts_progress = ProgressBar.create(title: 'Generating Posts', total: POSTS_TO_C
   end
   posts_progress.increment
 end
+
+Post.find_each(&:save)
