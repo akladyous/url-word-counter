@@ -24,7 +24,17 @@ class Stats < WordsCounted::Counter
   end
 
   def top(num = 25)
+    num = self.tokens.size >= 25 ? num : self.tokens.size
     token_frequency.first(num).to_h
+  end
+
+  def summary
+    {
+      token_count: self.token_count,
+      uniq_token_count: self.uniq_token_count,
+      characters_count: self.char_count,
+      average_chars_per_token: self.average_chars_per_token
+    }
   end
 
   def self.tokenize(slug, separator: SEPARATOR, **options )

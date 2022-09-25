@@ -9,7 +9,10 @@
 		<%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
 		<%= stylesheet_link_tag "style", "data-turbo-track": "reload" %>
 	</head>
-	<body>
+	<body class="container-fluid">
+		<div class="container flash">
+			<%= render 'flash' %>
+		</div>
 		<%= yield %>
 	</body>
 </html>
