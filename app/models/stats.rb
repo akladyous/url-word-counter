@@ -23,7 +23,7 @@ class Stats < WordsCounted::Counter
     super
   end
 
-  def top(num: 25)
+  def top(num=25)
     token_frequency.first(num).to_h
   end
 
