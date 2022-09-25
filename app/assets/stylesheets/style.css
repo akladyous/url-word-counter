@@ -12,6 +12,13 @@
     background-color: var(--bs-gray-100);
 }
 
+.button_to > button {
+    all: initial;
+    display: block;
+    /* padding: 5; */
+    font-family: inherit;
+}
+
 .link-to {
     text-decoration: none;
     color: inherit;
