@@ -48,3 +48,7 @@ looks like this:
 
     -   Tokenization
     -   Analysis & Statistics
+
+
+![intro](https://user-images.githubusercontent.com/73612260/192164386-e6d7e7b2-51cf-4ad3-8bb2-d1b373855e2c.gif)
+
