@@ -1,6 +1,7 @@
 class StatsController < ApplicationController
   before_action :set_stats
   def index
+    params
   end
 
   private

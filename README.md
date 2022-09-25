@@ -24,6 +24,7 @@ To get started, run the following while inside of this directory.
 3. Run `bin/rails db:migrate` To apply changes for all migrations that have not
    yet been run.
 4. Run `bin/rails db:seed` to generate some fake data to work with.
+5. Run `bin/rails s` to start the server.
 
 ## What You Already Have
 
@@ -54,6 +55,11 @@ looks like this:
 -   Form Validation Errors Helper
 -   Flash messages Helper
 -   Css Styling with Bootstrap
+
+## Comment
+
+For the sake of this project I have integrated `FriendlyId` gem, just to have
+some friendly generated url to work with.
 
 ## Demo
 

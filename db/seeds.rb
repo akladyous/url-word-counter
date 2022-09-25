@@ -13,9 +13,9 @@ TITLE = Faker::Lorem
         .paragraph(sentence_count: 5, supplemental: true)
         .gsub('.', '')
         .split(' ')
-        .inject([]) do |memo, word|
-          memo.concat([word] * rand(3..10))
-          memo
+        .inject([]) do |prev_value, word|
+          prev_value.concat([word] * rand(3..10))
+          prev_value
         end
 
 posts_progress = ProgressBar.create(title: 'Generating Posts', total: POSTS_TO_CREATE + 1 )
