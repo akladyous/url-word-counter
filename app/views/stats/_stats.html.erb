@@ -1,13 +1,14 @@
 <% title_size = capture do %>
 	<%= stats.tokens.size >= 25 ? 25 : stats.tokens.size %>
 <% end %>
-<%= turbo_frame_tag post_stats_path(post.id).parameterize do %>
+<%= turbo_frame_tag post_stats_path(post.id).parameterize, data: {turbo_action: 'advance'} do %>
 	<div class="row">
 		<div class="col-12 mx-0">
 			<div class="border border-1 rounded-2">
 				<div class="m-2">
 					<h5>Top <%= title_size%> Words</h5>
 				</div>
+				<hr class="mx-2">
 				<div class="d-flex flex-wrap">
 					<% stats.top(title_size.to_i).each do |word, count| %>
 						<div class="border border-1 rounded-2 m-2 px-4 py-2 position-relative words">

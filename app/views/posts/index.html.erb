@@ -16,17 +16,17 @@
 				<div class="col-1 my-auto">
 					<div class="py-1 statis">
 						<a class="btn btn-light"
-                            data-bs-toggle="collapse"
-                            href="#collapseStats_<%= dom_id(post) %>"
-                            role="button"
-                            aria-expanded="false"
-                            aria-controls="collapseStats_<%= dom_id(post) %>">
+                                data-bs-toggle="collapse"
+                                href="#collapseStats_<%= dom_id(post) %>"
+                                role="button"
+                                aria-expanded="false"
+                                aria-controls="collapseStats_<%= dom_id(post) %>">
 							Stats
 						</a>
 					</div>
 				</div>
-				<div class="collapse my-2 px-2" id="collapseStats_<%= dom_id(post) %>">
-					<%= turbo_frame_tag post_stats_path(post.id).parameterize, src: post_stats_path(post), loading: 'lazy'  %>
+				<div class="collapse my-2 px-2" id="collapseStats_<%= dom_id(post) %>" >
+					<%= turbo_frame_tag post_stats_path(post.id).parameterize, src: post_stats_path(post), loading: 'lazy', data: {turbo_action: 'advance'} %>
 				</div>
 			</div>
 		<% end %>

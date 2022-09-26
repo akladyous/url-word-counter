@@ -32,7 +32,7 @@ The starter code has migrations and models for the initial `Posts` and
 `FriendlyId` models, and seed data for `Posts`'s model. The schema currently
 looks like this:
 
-### `doctors` table
+### `posts` table
 
 | Column | Type   |
 | ------ | ------ |
