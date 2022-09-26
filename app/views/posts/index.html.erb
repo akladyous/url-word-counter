@@ -26,7 +26,7 @@
 					</div>
 				</div>
 				<div class="collapse my-2 px-2" id="collapseStats_<%= dom_id(post) %>" >
-					<%= turbo_frame_tag post_stats_path(post.id).parameterize, src: post_stats_path(post), loading: 'lazy', data: {turbo_action: 'advance'} %>
+					<%= turbo_frame_tag post_stats_path(post.id).parameterize, src: post_stats_path(post), loading: 'lazy' %>
 				</div>
 			</div>
 		<% end %>

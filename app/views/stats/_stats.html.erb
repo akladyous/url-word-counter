@@ -1,7 +1,7 @@
 <% title_size = capture do %>
 	<%= stats.tokens.size >= 25 ? 25 : stats.tokens.size %>
 <% end %>
-<%= turbo_frame_tag post_stats_path(post.id).parameterize, data: {turbo_action: 'advance'} do %>
+<%= turbo_frame_tag post_stats_path(post.id).parameterize do %>
 	<div class="row">
 		<div class="col-12 mx-0">
 			<div class="border border-1 rounded-2">
