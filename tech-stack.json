@@ -1,0 +1,13 @@
+{
+    "tech stack": [
+        "Ruby on Rails 7.0.4",
+        "PostgreSQL",
+        "Puma (web server)",
+        "Redis",
+        "WordsCounted",
+        "Stimulus",
+        "Turbo",
+        "Capybara",
+        "Selenium"
+    ]
+}
