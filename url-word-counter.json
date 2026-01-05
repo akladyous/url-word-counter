@@ -1,0 +1,19 @@
+{
+    "tech stack": [
+        "Ruby on Rails 7.0.4",
+        "PostgreSQL",
+        "Puma (web server)",
+        "Redis",
+        "WordsCounted",
+        "Stimulus",
+        "Turbo",
+        "Capybara",
+        "Selenium"
+    ],
+    "highlights": [
+        "Developed a security-focused URL analysis platform using Ruby on Rails and PostgreSQL to perform real-time word frequency, tokenization, and content statistics via web UI and RESTful APIs.",
+        "Implemented robust input validation, type checking, and sanitization with Rails strong parameters and regex-based tokenization to mitigate injection and malware-related risks.",
+        "Integrated statistical analysis workflows using the WordsCounted library to compute top-word frequencies, token counts, and character metrics for submitted URL content.",
+        "Designed responsive and performant user interactions with Turbo Rails, Stimulus, Bootstrap, and Redis-backed infrastructure to support fast updates and scalable request handling."
+    ]
+}
